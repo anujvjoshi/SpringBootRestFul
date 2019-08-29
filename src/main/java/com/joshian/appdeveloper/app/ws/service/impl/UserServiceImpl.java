@@ -21,7 +21,7 @@ public class UserServiceImpl implements UserService{
 		UserEntity userEntity = new UserEntity();
 		BeanUtils.copyProperties(userDto, userEntity);
 		
-		// Temporarily adding the values hard coded  
+		// Temporarily adding the values hard coded 
 		userEntity.setEncryptedPassword("Test");
 		userEntity.setUserId("testUserId");
 		
